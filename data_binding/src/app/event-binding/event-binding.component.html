@@ -1,0 +1,18 @@
+<div>
+    <h1>onw way binding with event binding</h1>
+    <!-- <span><b>Search:</b></span> -->
+    <input type="text" (input)="changeSearchValue($event)">
+    <!-- <input type="text" [(ngModel)]="searchValue"> -->
+ <p>You searched for "{{searchValue}}"</p>
+
+
+<input type="button" value="click me" (click) = "abc()"/>
+<br>
+{{msg}}
+<br>
+name: <input type="text" #nameref/>
+<input type="button" value="pass name" (click)= "xyz(nameref)"/>
+<input type="button" value="pass name" (click)= "xyz(nameref)"/>
+<br>
+{{name}}
+</div>
