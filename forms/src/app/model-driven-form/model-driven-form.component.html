@@ -1,0 +1,16 @@
+<div>
+    <h2>Using Template Driven form</h2>
+    <br>
+  <form [formGroup]="loginRef" (ngSubmit)="handleSubmit()">
+    <label for="">Email:- </label>
+    <input type="email"  formControlName = 'user'/>
+    <br />
+    <label for="">Password</label>
+    <input type="password" formControlName = 'pass'/>
+    <br />
+    <br />
+    <input type="submit"/>
+    <input type="reset"/>
+  </form>
+  {{result}}
+</div>

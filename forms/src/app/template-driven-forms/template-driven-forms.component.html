@@ -1,0 +1,15 @@
+<div>
+    <h2>Using Template Driven form</h2>
+    <br>
+  <form #loginref="ngForm" (ngSubmit)="handleSubmit(loginref)">
+    <label for="">Email:- </label>
+    <input type="email" name="user" ngModel/>
+    <br />
+    <label for="">Password</label>
+    <input type="password" name="pass" ngModel/>
+    <br />
+    <br />
+    <input type="submit" />
+    <input type="reset" value="reset" />
+  </form>
+</div>
