@@ -1,0 +1,19 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "user": "abc@gmail.com",
+      "pass": 1234
+    },
+    {
+      "id": 2,
+      "user": "abcd@gmail.com",
+      "pass": 1234
+    },
+    {
+      "id": 2,
+      "user": "abce@gmail.com",
+      "pass": 1234
+    }
+  ]
+}
