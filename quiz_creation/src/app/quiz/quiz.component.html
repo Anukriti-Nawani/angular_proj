@@ -1,0 +1,16 @@
+<h1>Quiz</h1>
+<div *ngIf="currentQuestion" class="quiz-container">
+  <p class="question" >{{ currentQuestion.question }}</p>
+  <ul>
+    <li *ngFor="let option of currentQuestion.options">
+      <label>
+        <input type="radio" name="answer" [(ngModel)]="selectedAnswer" [value]="option">
+        {{ option }}
+      </label>
+    </li>
+  </ul>
+  <button (click)="nextQuestion()">Next</button>
+</div>
+<div *ngIf="!currentQuestion">
+  <button (click)="submitQuiz()">Submit</button>
+</div>

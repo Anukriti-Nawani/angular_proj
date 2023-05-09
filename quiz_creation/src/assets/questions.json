@@ -1,0 +1,19 @@
+[
+    {
+      "question": "What is the capital of France?",
+      "options": ["Paris", "London", "New York", "Berlin"],
+      "answer": "Paris"
+    },
+    {
+      "question": "Who invented the telephone?",
+      "options": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Benjamin Franklin"],
+      "answer": "Alexander Graham Bell"
+    },
+    {
+      "question": "What is 1 + 1?",
+      "options": ["1", "2", "3", "4"],
+      "answer": "2"
+    }
+    
+  ]
+  
