@@ -1,0 +1,53 @@
+<div class="signup-container">
+  <h2>Signup</h2>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-form">
+    <mat-form-field class="mat-form-field">
+      <mat-label>Name</mat-label>
+      <input matInput formControlName="name" required>
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label>Phone Number</mat-label>
+      <input matInput formControlName="phoneNumber" required pattern="[0-9]{10}">
+      <mat-error *ngIf="signupForm.get('phoneNumber')?.invalid && signupForm.get('phoneNumber')?.touched">
+        Please enter a valid phone number.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required email>
+      <mat-error *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+        Please enter a valid email address.
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password" required minlength="8">
+      <mat-error *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+        Please enter a valid password (min 8 characters).
+      </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label>Date of Birth</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="dateOfBirth" required>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="mat-form-field">
+      <mat-label>Gender</mat-label>
+      <mat-select formControlName="gender" required class="mat-select">
+        <mat-option value="" disabled>Select gender</mat-option>
+        <mat-option value="male">Male</mat-option>
+        <mat-option value="female">Female</mat-option>
+        <mat-option value="other">Other</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">Create Account</button>
+    <button mat-raised-button color="warn" type="reset">Reset</button>
+  </form>
+</div>

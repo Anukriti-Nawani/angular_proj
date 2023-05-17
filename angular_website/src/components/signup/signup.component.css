@@ -1,0 +1,48 @@
+.signup-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mat-form-field {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+  }
+  
+  .mat-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .mat-select {
+    width: 100%;
+  }
+  
+  @media (max-width: 500px) {
+    .signup-container {
+      max-width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  .mat-radio-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mat-radio-button {
+    margin-top: 10px;
+  }
+  
