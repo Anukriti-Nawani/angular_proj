@@ -1,0 +1,184 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1500,
+      "place": "Paris"
+    },
+    {
+      "id": 2,
+      "image": "https://img.etimg.com/thumb/msid-96836017,width-1015,height-761,imgsize-120772,resizemode-8/prime/corporate-governance/from-marriotts-to-hyatts-to-le-mridiens-premium-hotel-assets-are-stuck-at-bankruptcy-courts.jpg",
+      "price": 1200,
+      "place": "London"
+    },
+    {
+      "id": 3,
+      "image": "https://r1imghtlak.mmtcdn.com/ade7530a484511ecadd40a58a9feac02.jpg?&output-quality=75&downsize=583:388&output-format=jpg",
+      "price": 2000,
+      "place": "New York"
+    },
+    {
+      "id": 4,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1900,
+      "place": "Rome"
+    },
+    {
+      "id": 5,
+      "image": "https://www.hotelsbarriere.com/content/dam/hotels/CAN/CANGA/pr%C3%A9sentation-h%C3%B4tel/graydalbionokk.jpg/jcr%3Acontent/renditions/cq5dam.web.1024.412.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 6,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1500,
+      "place": "Paris"
+    },
+    {
+      "id": 7,
+      "image": "https://img.etimg.com/thumb/msid-96836017,width-1015,height-761,imgsize-120772,resizemode-8/prime/corporate-governance/from-marriotts-to-hyatts-to-le-mridiens-premium-hotel-assets-are-stuck-at-bankruptcy-courts.jpg",
+      "price": 1200,
+      "place": "London"
+    },
+    {
+      "id": 8,
+      "image": "https://r1imghtlak.mmtcdn.com/ade7530a484511ecadd40a58a9feac02.jpg?&output-quality=75&downsize=583:388&output-format=jp",
+      "price": 2000,
+      "place": "New York"
+    },
+    {
+      "id": 9,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1900,
+      "place": "Rome"
+    },
+    {
+      "id": 10,
+      "image": "https://img.etimg.com/thumb/msid-96836017,width-1015,height-761,imgsize-120772,resizemode-8/prime/corporate-governance/from-marriotts-to-hyatts-to-le-mridiens-premium-hotel-assets-are-stuck-at-bankruptcy-courts.jpg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 11,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1500,
+      "place": "Paris"
+    },
+    {
+      "id": 12,
+      "image": "https://r1imghtlak.mmtcdn.com/ade7530a484511ecadd40a58a9feac02.jpg?&output-quality=75&downsize=583:388&output-format=jpg",
+      "price": 1200,
+      "place": "London"
+    },
+    {
+      "id": 13,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 2000,
+      "place": "New York"
+    },
+    {
+      "id": 14,
+      "image": "https://img.etimg.com/thumb/msid-96836017,width-1015,height-761,imgsize-120772,resizemode-8/prime/corporate-governance/from-marriotts-to-hyatts-to-le-mridiens-premium-hotel-assets-are-stuck-at-bankruptcy-courts.jpg",
+      "price": 1900,
+      "place": "Rome"
+    },
+    {
+      "id": 15,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 16,
+      "image": "https://r1imghtlak.mmtcdn.com/ade7530a484511ecadd40a58a9feac02.jpg?&output-quality=75&downsize=583:388&output-format=jpg",
+      "price": 1500,
+      "place": "Paris"
+    },
+    {
+      "id": 17,
+      "image": "https://img.etimg.com/thumb/msid-96836017,width-1015,height-761,imgsize-120772,resizemode-8/prime/corporate-governance/from-marriotts-to-hyatts-to-le-mridiens-premium-hotel-assets-are-stuck-at-bankruptcy-courts.jpg",
+      "price": 1200,
+      "place": "London"
+    },
+    {
+      "id": 18,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 2000,
+      "place": "New York"
+    },
+    {
+      "id": 19,
+      "image": "https://www.hotelsbarriere.com/content/dam/hotels/CAN/CANGA/pr%C3%A9sentation-h%C3%B4tel/graydalbionokk.jpg/jcr%3Acontent/renditions/cq5dam.web.1024.412.jpeg",
+      "price": 1900,
+      "place": "Rome"
+    },
+    {
+      "id": 20,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 21,
+      "image": "https://r1imghtlak.mmtcdn.com/ade7530a484511ecadd40a58a9feac02.jpg?&output-quality=75&downsize=583:388&output-format=jpg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 22,
+      "image": "https://img.etimg.com/thumb/msid-96836017,width-1015,height-761,imgsize-120772,resizemode-8/prime/corporate-governance/from-marriotts-to-hyatts-to-le-mridiens-premium-hotel-assets-are-stuck-at-bankruptcy-courts.jpg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 23,
+      "image": "https://www.hotelsbarriere.com/content/dam/hotels/CAN/CANGA/pr%C3%A9sentation-h%C3%B4tel/graydalbionokk.jpg/jcr%3Acontent/renditions/cq5dam.web.1024.412.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 24,
+      "image": "https://r1imghtlak.mmtcdn.com/ade7530a484511ecadd40a58a9feac02.jpg?&output-quality=75&downsize=583:388&output-format=jpg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 25,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 26,
+      "image": "https://img.etimg.com/thumb/msid-96836017,width-1015,height-761,imgsize-120772,resizemode-8/prime/corporate-governance/from-marriotts-to-hyatts-to-le-mridiens-premium-hotel-assets-are-stuck-at-bankruptcy-courts.jpg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 27,
+      "image": "https://www.hotelsbarriere.com/content/dam/hotels/CAN/CANGA/pr%C3%A9sentation-h%C3%B4tel/graydalbionokk.jpg/jcr%3Acontent/renditions/cq5dam.web.1024.412.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 28,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 29,
+      "image": "https://r1imghtlak.mmtcdn.com/ade7530a484511ecadd40a58a9feac02.jpg?&output-quality=75&downsize=583:388&output-format=jpg",
+      "price": 1800,
+      "place": "Tokyo"
+    },
+    {
+      "id": 30,
+      "image": "https://assets-global.website-files.com/5c6d6c45eaa55f57c6367749/624b471bdf247131f10ea14f_61d31b8dbff9b500cbd7ed32_types_of_rooms_in_a_5-star_hotel_2_optimized_optimized.jpeg",
+      "price": 1800,
+      "place": "Tokyo"
+    }
+  ]
+}

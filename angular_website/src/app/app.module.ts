@@ -11,16 +11,20 @@ import { SignUpComponent } from 'src/components/signup/signup.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
-import { HomeComponent } from '../components/home/home.component'; // Import MatNativeDateModule or MatMoment
-
+import { HomeComponent } from '../components/home/home.component';
+import { NavbarComponent } from '../components/navbar/navbar.component';
+import { FooterComponent } from '../components/footer/footer.component'; // Import MatNativeDateModule or MatMoment
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,9 +38,10 @@ import { HomeComponent } from '../components/home/home.component'; // Import Mat
     AppRoutingModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatSnackBar
+    MatSnackBarModule,
+    MatToolbarModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

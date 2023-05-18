@@ -1,1 +1,45 @@
-<p>home works!</p>
+<ng-container *ngIf="loggedInUser; else homePageSection">
+  <app-navbar [loggedInUser]="loggedInUser"></app-navbar>
+</ng-container>
+
+<ng-template #homePageSection>
+  <div class="container">
+    <div class="logo">
+      <a href=" "><img src="https://ziptrrip.com/assets/images/company-logos/blackLogo.png" alt="Logo" /></a>
+
+    </div>
+
+    <div class="flex-container">
+      <nav class="navbar">
+        <p>
+          Ziptrrip is a unified corporate travel platform enabling end-to-end
+          convenience for the employees and building transparency and
+          decision-making ability for the corporates.
+        </p>
+      </nav>
+    </div>
+
+    <div class="login-form">
+      <h2>Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+          <input matInput placeholder="Name" formControlName="name" autocomplete="off"/>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput placeholder="Email" formControlName="email" />
+        </mat-form-field>
+        <mat-form-field>
+          <input
+            matInput
+            placeholder="Password"
+            formControlName="password"
+            type="password"
+          />
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="signup">Sign Up</a></p>
+    </div>
+  </div>
+</ng-template>
+<app-footer></app-footer>
