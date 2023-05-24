@@ -1,0 +1,103 @@
+  .container {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+  }
+
+  .employee-card {
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .employee-card:hover {
+    transform: translateY(-20px);
+  }
+
+  .employee-item {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .employee-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  .employee-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .employee-position {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .employee-bio {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* contact */
+  .container2 {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contact-container {
+    width: 400px;
+    margin-top: -13.5rem;
+    margin-left: 2rem;
+    padding-block: 20px;
+    padding-right: 4rem;
+    padding-left: 2rem;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid red; */
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form textarea {
+    height: 120px;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049;
+  }
+  

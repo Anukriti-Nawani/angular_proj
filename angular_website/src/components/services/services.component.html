@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="services-container">
+    <mat-expansion-panel class="service-card" *ngFor="let service of services; let isFirst = first" [expanded]="isFirst">
+      <mat-expansion-panel-header class="panel-header">
+        <mat-panel-title class="panel-title">
+          {{ service.title }}
+        </mat-panel-title>
+        <mat-panel-description class="panel-description">
+          {{ service.shortDescription }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="panel-content">
+        <p>{{ service.fullDescription }}</p>
+        <!-- Add more content here if needed -->
+      </div>
+      <mat-action-row class="panel-actions">
+        <a href="https://ziptrrip.com/" mat-button color="primary">Learn More</a>
+      </mat-action-row>
+    </mat-expansion-panel>
+  </div>
+  

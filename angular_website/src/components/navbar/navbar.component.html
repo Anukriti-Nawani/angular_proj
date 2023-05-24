@@ -1,13 +1,37 @@
-<div class="logo">
-    <a href=""><img src="https://ziptrrip.com/assets/images/company-logos/blackLogo.png" alt="Logo" /></a>
-  </div>
-  
-  <nav class="navbar">
-    <a href="#">About Us</a>
-    <a href="#">Services</a>
-    <a href="#">Active Members</a>
-    <a href="#">Plan Your Travel</a>
-    <a href="#">Update Profile</a>
-    <span class="welcome-user" *ngIf="loggedInUser">Welcome, {{ loggedInUser }}!</span>
-  </nav>
-  
+<div class="wrapper">
+  <mat-toolbar class="navbar">
+    <div class="logo">
+      <a href=""><img src="https://ziptrrip.com/assets/images/company-logos/blackLogo.png" alt="Logo" /></a>
+    </div>
+
+    <div class="navbar-links">
+      <a mat-button  href="services">
+        <mat-icon>work</mat-icon>
+        Services
+      </a>
+      <a mat-button href="activemembers">
+        <mat-icon>people</mat-icon>
+        Active Members
+      </a>
+      <a mat-button href="planyourtravel">
+        <mat-icon>flight</mat-icon>
+        Plan Your Travel
+      </a>
+      <a mat-button href="aboutus">
+        <mat-icon>info</mat-icon>
+        About Us
+      </a>
+      <div class="menu" [matMenuTriggerFor]="menu" *ngIf="loggedInUser">
+        <button mat-icon-button>
+          <span class="welcome-user">Hi, {{ loggedInUser }}!</span>
+        </button>
+        <mat-menu #menu="matMenu">
+          <a href="updateprofile" mat-menu-item>
+            <mat-icon>account_circle</mat-icon>
+            Update Profile
+          </a>
+        </mat-menu>
+      </div>
+    </div>
+  </mat-toolbar>
+</div>

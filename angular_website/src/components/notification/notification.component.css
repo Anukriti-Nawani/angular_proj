@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 40%;
+    margin-top: -48rem;
+    margin-left: 51rem;
+        /* border: 1px solid red; */
+
+  }
+  
+  .side-notifications {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    /* width: 60%; */
+
+  }
+  
+  .notification {
+    margin-bottom: 10px;
+  }
+  
+  .notification-card {
+    width: 500px;
+    border: 1px solid black;
+
+  }
+  
+  .notification-card mat-card-content {
+    padding: 10px;
+  }
+  
+  .notification-card mat-card-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
+  .notification-card mat-card-actions span {
+    margin-left: 10px;
+  }
+
+  .badge-icon {
+    position: relative;
+    top: -8.5rem;
+    right: -10px;
+  }
+  

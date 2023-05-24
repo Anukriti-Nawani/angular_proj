@@ -180,5 +180,100 @@
       "price": 1800,
       "place": "Tokyo"
     }
+  ],
+
+  "employees": [
+    {
+      "name": "Shan Prabhakaran",
+      "position": "CEO",
+      "bio": "Shan is a tech enthusiast who leads our development team to create innovative solutions.",
+      "image": "https://img.freepik.com/premium-psd/3d-cartoon-character-isolated-3d-rendering_235528-555.jpg"
+    },
+    {
+      "name": "Rishabh Agrawal",
+      "position": "CTO",
+      "bio": "Rishabh is a tech enthusiast who leads our development team to create innovative solutions.",
+      "image": "https://img.freepik.com/premium-psd/3d-cartoon-character-avatar-isolated-3d-rendering_235528-544.jpg"
+    },
+    {
+      "name": "Bhaskara Busam",
+      "position": "Tech Lead",
+      "bio": "Bhaskara is a tech enthusiast who leads our development team to create innovative solutions.",
+      "image": "https://img.freepik.com/premium-psd/3d-cartoon-character-avatar-isolated-3d-rendering_235528-540.jpg"
+    },
+    {
+      "name": "Rahul",
+      "position": "Operations",
+      "bio": "Rahul is a tech enthusiast who leads our development team to create innovative solutions.",
+      "image": "https://img.freepik.com/premium-psd/3d-cartoon-character-avatar-isolated-3d-rendering_235528-554.jpg"
+    },
+    {
+      "name": "Shreejith",
+      "position": "Finance",
+      "bio": "Shreejith is a tech enthusiast who leads our development team to create innovative solutions.",
+      "image": "https://img.freepik.com/premium-psd/3d-cartoon-character-with-denim-jacket-isolated-3d-rendering_235528-581.jpg"
+    }
+  ],
+
+  "services": [
+    {
+      "title": "Flight Service",
+      "shortDescription": "Book domestic and international flights.",
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in condimentum risus, a volutpat nibh. Sed tincidunt augue eget sem luctus vulputate."
+    },
+    {
+      "title": "Cab Service",
+      "shortDescription": "Get convenient transportation with cab services.",
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in condimentum risus, a volutpat nibh. Sed tincidunt augue eget sem luctus vulputate."
+    },
+    {
+      "title": "Hotel Service",
+      "shortDescription": "Find and book hotels for your stay.",
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in condimentum risus, a volutpat nibh. Sed tincidunt augue eget sem luctus vulputate."
+    },
+    {
+      "title": "Bus Service",
+      "shortDescription": "Travel by bus to various destinations.",
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in condimentum risus, a volutpat nibh. Sed tincidunt augue eget sem luctus vulputate."
+    },
+    {
+      "title": "Train Service",
+      "shortDescription": "Experience train travel for your journey.",
+      "fullDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in condimentum risus, a volutpat nibh. Sed tincidunt augue eget sem luctus vulputate."
+    }
+  ],
+
+  "packages": [
+    {
+      "id": 1,
+      "image": "https://www.planetware.com/photos-large/F/france-paris-eiffel-tower.jpg",
+      "description": "This package provides the flight and hotel service",
+      "place": "Paris",
+      "total_amount": 5500
+    },
+    {
+      "id": 2,
+      "image": "https://cdn.uniacco.com/blog/wp-content/uploads/2022/02/21161553/photo-1587659901518-7020d4413085.jpg ",
+      "description": "This package provides the flight service",
+
+      "place": "London",
+      "total_amount": 4500
+    },
+    {
+      "id": 3,
+      "image": "https://www.planetware.com/photos-large/USNY/new-york-city-statue-of-liberty.jpg",
+      "description": "This package provides the  hotel service",
+
+      "place": "New York",
+      "total_amount": 1500
+    },
+    {
+      "id": 4,
+      "image": "https://images.thrillophilia.com/image/upload/s--yDbJo8wE--/c_fill,g_auto,h_600,q_auto,w_975/f_auto,fl_strip_profile/v1/images/photos/000/178/736/original/1573646646_rome.jpg.jpg",
+      "description": "This package provides the fligh, hotel and cab service",
+
+      "place": "Rome",
+      "total_amount": 7000
+    }
   ]
 }

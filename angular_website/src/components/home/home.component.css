@@ -20,7 +20,7 @@ html {
 }
 
 .flex-container {
-  background-color: #7e7e7e;
+  background-color: rgb(43, 41, 41);
   height: 7vh;
   border-radius: 4px;
   padding: 0.7rem;
@@ -32,7 +32,7 @@ html {
 
 .flex-container p {
   margin: 0;
-  color: #fff;
+  color: white;
   font-size: 20px;
 }
 
@@ -42,12 +42,12 @@ html {
   background-color: #f5f5f5;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 60vh;
+  height: 72.5vh;
   overflow: hidden;
 }
 
 .login-form h2 {
-  margin-bottom: 20px;
+  margin-bottom: 3rem;
   color: #7e7e7e;
 }
 
@@ -67,11 +67,52 @@ html {
 }
 
 .login-form p {
-  margin-top: 15px;
+  margin-top: 7rem;
   text-align: start;
 }
 
 app-footer {
   margin-top: auto;
   overflow: hidden;
+}
+
+/* slider */
+.slider-container {
+  margin-top: -37rem;
+  margin-right: 22rem;
+  margin-bottom: 4rem;
+  width: 74%;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rebeccapurple;
+}
+
+.carousel .slide {
+  position: relative;
+  display: none;
+  width: 100%;
+}
+
+.carousel .slide img {
+  width: 100%;
+  height: 30rem;
+}
+
+/* Optional: Add CSS for slide transitions */
+.carousel .slide.active {
+  display: block;
+  transition: opacity 0.3s ease-in-out;
+}
+
+carousel-control-prev,
+carousel-control-next {
+  display: none;
 }

@@ -1,0 +1,100 @@
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 400px;
+  padding: 21px;
+  text-align: center;
+  /* border: 1px solid red; */
+  margin-left: 1rem;
+  margin-top: -1.9rem;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.submit-button-container button {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+mat-card-actions button {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+mat-card-content {
+
+  border: 1px solid black;
+}
+
+mat-card {
+  margin: 0 auto;
+}
+
+.package-grid {
+  /* width: 62%; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: -2rem;
+  /* border: 1px solid black; */
+}
+
+.package-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 26px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+.package-box .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.package-box .image-container img {
+  width: 400px;
+  height: 200px;
+}
+
+.package-box h3 {
+  margin-top: -0.8rem;
+}
+
+.package-box p {
+  margin-top: -0.9rem;
+  font-weight: 500;
+}
+
+/* dialouge box */
+/* Add animation styles for the dialog */
+@keyframes rotateIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the dialog content */
+.dialog-container {
+  animation: rotateIn 0.5s ease-in-out;
+}

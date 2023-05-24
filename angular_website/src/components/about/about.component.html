@@ -1,0 +1,40 @@
+    <app-navbar></app-navbar>
+    <div class="container">
+        <mat-card class="employee-card" *ngFor="let employee of employees">
+        
+        <mat-card-content>
+            <div class="employee-item">
+            <img [src]="employee.image" alt="Employee Image" class="employee-image" />
+            <h3 class="employee-name">{{ employee.name }}</h3>
+            <p class="employee-position">{{ employee.position }}</p>
+            <p class="employee-bio">{{ employee.bio }}</p>
+            </div>
+        </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div class="container2">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+
+        <form (ngSubmit)="onSubmit()" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" [(ngModel)]="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" [(ngModel)]="email" name="email" required>
+            <label for="message">Phone Number</label>
+            <input type="number" id="phonenumber" [(ngModel)]="phonenumber" name="phonenumber" required>
+            <label for="message">Message</label>
+            <textarea id="message" [(ngModel)]="message" name="message" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+    
+        
+        </div>
+      
+    </div>
+
+    <app-notification></app-notification>
+
+    

@@ -1,0 +1,42 @@
+.active-members-container {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  mat-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 85%;
+    transition: transform 0.3s ease;
+  }
+  
+  mat-card:hover {
+    transform: translateX(-10px);
+  }
+  
+  .mat-card-content {
+    font-size: 14px;    
+
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 5px;
+
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .mat-grid-list {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }

@@ -1,0 +1,86 @@
+<app-navbar></app-navbar>
+<div class="outer-container">   
+  <mat-card class="container">
+    <h2>Plan Your Travel</h2>
+    <form (ngSubmit)="submitForm()" #travelForm="ngForm">
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter your name" name="name" required [(ngModel)]="formData.name" readonly>
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-label>Email ID</mat-label>
+        <input matInput placeholder="Enter your email" name="email" required [(ngModel)]="formData.email" readonly>
+      </mat-form-field>
+      
+      <mat-form-field>
+        <mat-label>Mobile No</mat-label>
+        <input matInput placeholder="Enter your contact" name="contact" required [(ngModel)]="formData.mobile">
+      </mat-form-field>
+      
+      <mat-form-field appearance="fill">
+        <mat-label>Start Date</mat-label>
+        <input matInput [matDatepicker]="startPicker" [min]="minDate" [max]="maxDate"
+               [value]="formData.departureDate?.start" name="startDate" [(ngModel)]="formData.departureDate.start">
+        <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+        <mat-datepicker #startPicker></mat-datepicker>
+      </mat-form-field>
+      
+      
+      <mat-form-field appearance="fill">
+        <mat-label>End Date</mat-label>
+        <input matInput [matDatepicker]="endPicker" [min]="minDate" [max]="maxDate"
+        [value]="formData.departureDate.end" name="endDate" [(ngModel)]="formData.departureDate.end">
+        <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+      <mat-datepicker #endPicker></mat-datepicker>
+      </mat-form-field>
+      
+      <mat-form-field class="service-field">
+        <mat-label>Packages</mat-label>
+        <mat-select placeholder="Select a package" name="package" required [(ngModel)]="formData.package">
+          <mat-option value="paris">Paris</mat-option>
+          <mat-option value="london">London</mat-option>
+          <mat-option value="new york">New York</mat-option>
+          <mat-option value="rome">Rome</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <div class="submit-button-container">
+        <button mat-raised-button color="primary" type="submit" [disabled]="!travelForm.form.valid">Submit</button>
+      </div>
+    </form>
+
+    <mat-card-actions>
+        <button mat-raised-button color="primary" [disabled]="!travelForm.form.valid" (click)="openTripDetailsDialog()">Show trip details</button>
+    </mat-card-actions>
+  </mat-card>
+<div>
+  <ng-template #tripDetailsDialogTemplate let-dialogRef>
+    <h2 mat-dialog-title>Hello {{ formData.name }}</h2>
+    <mat-dialog-content>
+      <h3>Trip Confirmed:</h3>
+      <p>Name: {{ formData.name }}</p>
+      <p>Mobile No: {{ formData.mobile }}</p>
+      <p>Email ID: {{ formData.email }}</p>
+      <p>Departure Date: {{ formData.departureDate?.start | date:'shortDate' }} - {{ formData.departureDate?.end | date:'shortDate' }}</p>
+      <p>Package: {{ formData.package }}</p>
+      <p>Total Amount: {{ totalAmount }}</p>
+      <p>Description: {{ selectedPackage?.description }}</p>
+      <h3>Thanks for planning a trip with us.</h3>
+    </mat-dialog-content>
+    <mat-dialog-actions align="end">
+      <button mat-button mat-dialog-close>Close</button>
+    </mat-dialog-actions>
+  </ng-template>
+</div>
+
+<mat-card class="package-grid">
+  <div class="package-box" *ngFor="let package of packages">
+    <div class="image-container">
+      <img [src]="package.image" [alt]="package.place">
+    </div>
+    <h3>Visit: {{ package.place }}</h3>
+    <p>Total Amount: {{ package.total_amount }}</p>
+    <p>Details: {{ package.description }}</p>
+  </div>
+</mat-card>

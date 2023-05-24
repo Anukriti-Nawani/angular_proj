@@ -30,12 +30,37 @@ export class SignUpComponent implements OnInit {
 
   onSubmit() {
     if (this.signupForm.valid) {
-      console.log(this.signupForm.value);
+      const { name, phoneNumber, email, dateOfBirth, gender } = this.signupForm.value;
+
+      const user = {
+        name,
+        phoneNumber,
+        email,
+        dateOfBirth,
+        gender,
+      };
+
+      // Retrieve existing users from local storage
+      let users = localStorage.getItem('users');
+      if (users) {
+        // Parse the stored users
+        const parsedUsers = JSON.parse(users);
+        // Add the new user to the existing users array
+        parsedUsers.push(user);
+        // Update the users array
+        users = JSON.stringify(parsedUsers);
+      } else {
+        // Create a new users array with the new user
+        users = JSON.stringify([user]);
+      }
+
+      // Store the updated users array in local storage
+      localStorage.setItem('users', users);
 
       this._snackBar.open('Signup successful!', 'Close', { duration: 3000 });
 
       // Redirect to home page
-      this.router.navigate(['/home']);
+      this.router.navigate(['']);
     } else {
       this._snackBar.open(
         'Invalid form. Please check your credentials.',

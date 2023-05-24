@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<div class="container">
+        <mat-grid-list cols="3" rowHeight="300px" gutterSize="20px">
+      <mat-grid-tile *ngFor="let hotel of hotels">
+        <div class="grid-item"> 
+          <img [src]="hotel.image" alt="Image" class="grid-image" />
+          <p class="price">Price: {{ hotel.price }}</p>
+          <p class="price">Place: {{ hotel.place }}</p>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  <app-footer></app-footer>
+  
